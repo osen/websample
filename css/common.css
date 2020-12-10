@@ -1,0 +1,16 @@
+#header
+{
+  border-bottom: 1px solid black;
+}
+
+#footer
+{
+  border-top: 1px solid black;
+}
+
+.content
+{
+  //background-image: url("../images/background.png");
+  //background-repeat: repeat;
+  padding-bottom: 1rem;
+}

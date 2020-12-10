@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Welcome - Karsten's Site</title>
+    <link rel="stylesheet" href="css/common.css">
+
+    <script>
+var slides = [];
+slides.push("images/slides/dog.png");
+slides.push("images/slides/cat.png");
+slides.push("images/slides/alpaca.png");
+slides.push("images/slides/boat.png");
+var si = 1;
+
+function next()
+{
+  var ss = document.getElementById("slideshow");
+
+  ss.src = slides[si];
+  si++;
+  si = si % slides.length;
+
+  window.setTimeout(next, 3000);
+}
+
+window.setTimeout(next, 3000);
+    </script>
+  </head>
+
+  <body>
+    <div id="header">
+      <img src="images/logo.png">
+    </div>
+
+    <div class="content">
+
+    <h1>Welcome!</h1>
+
+    <div>
+      <img id="slideshow" src="images/slides/dog.png">
+    </div>
+
+    <div>
+      <input type="button" onclick="next();" value="Next">
+    </div>
+
+Nam molestie, est sit amet tincidunt finibus, felis ex euismod
+nisl, non aliquam metus diam at sapien. Sed posuere elit in volutpat
+accumsan. Suspendisse potenti. Nulla facilisi. Curabitur et fermentum
+purus. Sed volutpat, magna at mattis eleifend, massa magna dignissim
+turpis, eu aliquam erat erat ac elit. Pellentesque dignissim at nisi a
+convallis. Praesent euismod, ex vitae rhoncus tristique, nisl eros ornare
+odio, at egestas justo risus vel ante. Pellentesque posuere nisl nulla,
+scelerisque fermentum ante viverra ut.
+
+Nullam consectetur lacinia libero, sit amet aliquam dolor ultricies
+id. Sed blandit nec nulla a malesuada. Nam rhoncus venenatis
+enim eu aliquam. Mauris eu massa quis velit ornare aliquet at vel
+ante. Nullam mauris tellus, posuere non tristique tristique, luctus non
+enim. Vestibulum arcu sapien, gravida sed sollicitudin ut, lobortis quis
+ligula. Suspendisse sodales turpis eget mauris blandit rhoncus. Aliquam
+sagittis eros quis mattis gravida. Etiam imperdiet augue ut tortor
+accumsan, a lacinia elit auctor. In pharetra aliquet finibus. Praesent
+tincidunt, nunc non porttitor auctor, metus leo dignissim felis, eu tempus
+velit ex vitae ex. Aenean leo tellus, dapibus quis lacinia mattis, viverra
+in nunc. Phasellus venenatis massa ac volutpat vulputate. Suspendisse sed
+tortor a turpis lacinia feugiat ut nec lectus. Nullam non semper tortor.
+
+    </div>
+
+    <div id="footer">
+      Copyright &copy; 2020
+
+      <div style="float: right">
+        <a href="contact.html">Contact</a> | About
+      </div>
+    </div>
+
+  </body>
+</html>
