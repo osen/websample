@@ -1,7 +1,7 @@
-cat src/header.html > projects.html
-cat src/projects.html >> projects.html
-cat src/footer.html >> projects.html
+cat src/header.html | sed 's/__TITLE__/Welcome/' > welcome.html
+cat src/welcome.html >> welcome.html
+cat src/footer.html >> welcome.html
 
-cat src/header.html > animals.html
-cat src/animals.html >> animals.html
-cat src/footer.html >> animals.html
+cat src/header.html | sed 's/__TITLE__/Contact/' > contact.html
+cat src/contact.html >> contact.html
+cat src/footer.html >> contact.html

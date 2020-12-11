@@ -1,7 +1,29 @@
 <html>
   <head>
-    <title>Welcome - Karsten's Site</title>
+    <title>__TITLE__ - Karsten's Site</title>
     <link rel="stylesheet" href="css/common.css">
+
+    <script>
+var slides = [];
+slides.push("images/slides/dog.png");
+slides.push("images/slides/cat.png");
+slides.push("images/slides/alpaca.png");
+slides.push("images/slides/boat.png");
+var si = 1;
+
+function next()
+{
+  var ss = document.getElementById("slideshow");
+
+  ss.src = slides[si];
+  si++;
+  si = si % slides.length;
+
+  window.setTimeout(next, 3000);
+}
+
+window.setTimeout(next, 3000);
+    </script>
   </head>
 
   <body>
@@ -10,4 +32,3 @@
     </div>
 
     <div class="content">
-
